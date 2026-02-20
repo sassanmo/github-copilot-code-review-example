@@ -52,4 +52,12 @@ public class Calculator {
         }
         return a / b;
     }
+
+    int power(int a, int b) {
+      int res = a;
+      for (int i = 0; i < a; i++) {
+        res = res * a;
+      }
+      return b;
+    }
 }
