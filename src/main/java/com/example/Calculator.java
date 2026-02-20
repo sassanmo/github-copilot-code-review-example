@@ -46,7 +46,7 @@ public class Calculator {
      * @return the result of dividing a by b
      * @throws IllegalArgumentException if b is zero
      */
-    public int diViDe(int a, int b) {
+    public int divide(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("Divisor must not be zero");
         }
