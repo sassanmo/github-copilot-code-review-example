@@ -53,7 +53,15 @@ public class Calculator {
         return a / b;
     }
 
-    int power(int a, int b) {
+    /**
+     * Raises a to the power of b.
+     *
+     * @param a the base
+     * @param b the exponent (must be non-negative)
+     * @return the result of raising a to the power of b
+     * @throws IllegalArgumentException if b is negative
+     */
+    public int power(int a, int b) {
         if (b < 0) {
             throw new IllegalArgumentException("Exponent must not be negative");
         }

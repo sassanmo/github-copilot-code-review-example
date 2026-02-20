@@ -44,5 +44,25 @@ class CalculatorTest {
         assertEquals(0, calculator.multiply(5, 0));
     }
 
+    @Test
+    void power_returnsCorrectResultForPositiveExponent() {
+        assertEquals(8, calculator.power(2, 3), "2^3 should equal 8");
+    }
+
+    @Test
+    void power_returnsOneWhenExponentIsZero() {
+        assertEquals(1, calculator.power(5, 0), "Any number raised to the power 0 should equal 1");
+    }
+
+    @Test
+    void power_returnsZeroWhenBaseIsZero() {
+        assertEquals(0, calculator.power(0, 3), "0 raised to any positive exponent should equal 0");
+    }
+
+    @Test
+    void power_throwsIllegalArgumentExceptionForNegativeExponent() {
+        assertThrows(IllegalArgumentException.class, () -> calculator.power(2, -1),
+                "Negative exponent should throw IllegalArgumentException");
+    }
 
 }
