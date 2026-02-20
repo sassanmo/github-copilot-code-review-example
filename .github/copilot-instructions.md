@@ -10,6 +10,12 @@ This repository is a sample Java project used to demonstrate GitHub Copilot code
 - Flag any code that does not follow Java naming conventions (classes in PascalCase, methods and variables in camelCase, constants in UPPER_SNAKE_CASE).
 - Highlight potential null pointer exceptions or unhandled edge cases.
 
+### Formatting & Naming Conventions
+- Ensure code is consistently formatted according to the project's style (indentation, spacing, braces, etc.).
+- Review for proper use of whitespace and alignment to improve readability.
+- Check that files, classes, methods, and variables follow established naming conventions.
+- Flag any inconsistent or unclear naming that could reduce maintainability.
+
 ### Logic & Correctness
 - Verify that new methods implement the intended behavior correctly.
 - Check for off-by-one errors, incorrect operator usage, or missing return paths.
