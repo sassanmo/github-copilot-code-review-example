@@ -38,6 +38,18 @@ public class Calculator {
         return a * b;
     }
 
-      int diViDe(int a, int b) {return a / a;
-  }
+    /**
+     * Divides a by b.
+     *
+     * @param a the dividend
+     * @param b the divisor
+     * @return the result of dividing a by b
+     * @throws IllegalArgumentException if b is zero
+     */
+    public int diViDe(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Divisor must not be zero");
+        }
+        return a / b;
+    }
 }
